@@ -3,7 +3,8 @@ import 'package:runner_flutter/pages/home.dart';
 import 'package:flutter_config/flutter_config.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized(); // Required by FlutterConfig
+  //Configuração para variavael de ambiente
+  WidgetsFlutterBinding.ensureInitialized();
   await FlutterConfig.loadEnvVariables();
   runApp(const MyApp());
 }
